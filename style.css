@@ -17,7 +17,7 @@ html,body{
     border-radius: 50%;
     position: fixed;
     background-color:#D3B2FB;
-    z-index: 9;
+    z-index: 6;
     mix-blend-mode: difference;
     transition: left linear 0.1s top linear 0.1s;
 }
@@ -28,7 +28,10 @@ html,body{
     background-color: #0F0D0D;
     overflow-x: hidden;
 }
+/* page1  */
 .page1{
+    position: relative;
+    z-index: 9;
     min-height: 100vh;
     width: 100%;
 }
@@ -97,6 +100,8 @@ html,body{
 
 /*page2*/
 .page2{
+    position: relative;
+    z-index: 9;
     min-height: 90vh;
     width: 100%;
     /* background-color:#0F0D0D; */
@@ -155,6 +160,7 @@ html,body{
     width: 100%;
     min-height: 250vh;
     position: relative;
+    z-index: 9;
     padding-top: 60px;
     /* background-color: fuchsia; */
     border-bottom: 2px solid #b9b3b3 ;
@@ -281,6 +287,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 .circle p{
     color:#0F0D0D;
@@ -290,6 +297,61 @@ html,body{
 /*page 4*/
 .page4{
     width: 100%;
+    height: fit-content;
+         /* background-color: #b2fbbe; */
+    position: relative;
+    z-index: 9;
+    padding: 100px ;
+}
+.elem{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text-div{
+    /* background-color: lightblue; */
+    height: 90px;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 5vw;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color:#D3B2FB;
+
+}
+.elem img{
+    height: 40vh;
+    width: 30vh;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    
+}
+.elem:hover img{
+opacity: 1;
+transform: translateY(0%) rotate(0deg);
+}
+.elem img:nth-child(1){
+    left:12%;
+    height: 36vh;
+    width:45vh
+
+}
+.elem img:nth-child(3){
+    right:20%;
+}
+/*page 5*/
+.page5{
+    width: 100%;
     height: 100vh;
-    background-color: #b2fbbe;
+    background-color: #b8d20c;
+    position: relative;
+    z-index: 9;
 }

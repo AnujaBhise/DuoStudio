@@ -41,8 +41,8 @@ init();
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
 main.addEventListener("mousemove",function(dets){
-    crsr.style.left=dets.x+30+"px";
-    crsr.style.top=dets.y+20+"px";
+    crsr.style.left=dets.x+10+"px";
+    crsr.style.top=dets.y+10+"px";
 })
 
 
@@ -85,4 +85,17 @@ var tl2 = gsap.timeline({
 })
 tl2.to(".main",{
     backgroundColor:"#fff"
+})
+tl3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".page1 h1",
+        scroller:".main",
+        markers:true,
+        start:"top -430%",
+        end:"top -480%",
+        scrub:3
+    }
+})
+tl3.to(".main",{
+    backgroundColor:"#0f0d0d"
 })
