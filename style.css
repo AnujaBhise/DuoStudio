@@ -1,7 +1,10 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
 }
 html,body{
     height: 100%;
@@ -11,11 +14,66 @@ html,body{
     background-color: #0F0D0D;
 }
 .page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 #nav{
-    height: 60px;
+    height: 45px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#nav img{
+    height: 27px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+#nav-part2 h4{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#nav-part2 h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+    /* text-decoration: underline; */
+}
+#nav #circle{
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 500;
+    margin-top: 10vw;
+    margin-left: 18vw;
+    
+}
+.page1 h2{
+    font-size: 8vw;
+    line-height: 15vh;
+    font-weight: 500;
+    /* margin-top: 12vw; */
+    margin-left: 24vw;
+}
+.page1 video{
+
+    /* to make elems in center
+    method1
+    margin-left: auto;
+    margin-right: auto; */
+    margin-top: 3vw;
+    width: 60%;
+    /* method2  */
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0);    
 }
