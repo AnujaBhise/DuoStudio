@@ -77,3 +77,68 @@ html,body{
     left:50%;
     transform: translate(-50%,0);    
 }
+
+
+
+/*page2*/
+.page2{
+    min-height: 90vh;
+    width: 100%;
+    /* background-color:#0F0D0D; */
+    padding: 90px 6vw;
+    border-bottom: 2px solid #b9b3b3 ;
+}
+.page2 h1{
+    font-size: 6vw;
+    font-weight: 500;
+    position: relative;
+    left:5%;
+    color: #0F0D0D;
+    /* text-transform: uppercase; */
+}
+.page2-container{
+    /* background-color: red; */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.page2-left{
+    /* background-color: blue; */
+    width: 30%;
+}
+.page2-right{
+    /* background-color: blue; */
+    width: 50%;
+}
+.page2-left h2{
+    font-size: 2.7vw;
+    font-weight: 300;
+    color:#0F0D0D;
+    line-height: 4vw; 
+    text-transform: uppercase;
+}
+.page2-right p{
+    font-size: 1.5vw;
+    color: #0F0D0D;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border:none;
+    padding: 4px 0; 
+    background-color:#D3B2FB;   
+    color: #0F0D0D;
+    margin-top: 20px;
+}
+
+
+/* page 3 */
+.page3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+
+}
