@@ -40,7 +40,7 @@ init();
 //cursor
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
-main.addEventListener("mousemove",function(dets){
+document.addEventListener("mousemove",function(dets){
     crsr.style.left=dets.x+10+"px";
     crsr.style.top=dets.y+10+"px";
 })
@@ -51,7 +51,7 @@ var tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
-        markers:true,
+        markers:false,
         start:"top 30%",
         end:"top 0",
         scrub:3
@@ -77,7 +77,7 @@ var tl2 = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
-        markers:true,
+        markers:false,
         start:"top -120%",
         end:"top -130%",
         scrub:3
@@ -90,7 +90,7 @@ tl3 = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
-        markers:true,
+        markers:false,
         start:"top -430%",
         end:"top -480%",
         scrub:3
@@ -98,4 +98,38 @@ tl3 = gsap.timeline({
 })
 tl3.to(".main",{
     backgroundColor:"#0f0d0d"
+})
+
+var boxes = document.querySelectorAll(".box")
+boxes.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+            var att = elem.getAttribute("data-image");
+            crsr.style.width="300px"
+            crsr.style.height="250px"
+            crsr.style.borderRadius="0"
+            crsr.style.backgroundImage=`url(${att})`
+            crsr.style.opacity="1"
+            
+    })
+    elem.addEventListener("mouseleave",function(){
+        elem.style.backgroundColor="transparent"
+            crsr.style.width="21px"
+            crsr.style.height="21px"
+            crsr.style.borderRadius="50%"
+            crsr.style.backgroundImage=`none`
+            
+    })
+
+})
+var h4 = document.querySelectorAll("#nav h4")
+var pink = document.querySelector("#pink")
+h4.forEach(function(item){
+    item.addEventListener("mouseenter",function(){
+        pink.style.display = "block"
+        pink.style.opacity="1"
+    })
+    item.addEventListener("mouseleave",function(){
+        pink.style.display = "none"
+        pink.style.opacity="0"
+    })
 })
