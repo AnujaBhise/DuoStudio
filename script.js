@@ -1,3 +1,4 @@
+
 //smooth scrolling
 // const scroll = new LocomotiveScroll({
 //     el: document.querySelector('.main'),
@@ -6,7 +7,7 @@
 
 function init(){
     //for locomotive and scrollTrigger to work simultenously
-gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
@@ -35,6 +36,17 @@ ScrollTrigger.refresh();
 }
 init();
 
+
+//cursor
+var crsr = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+main.addEventListener("mousemove",function(dets){
+    crsr.style.left=dets.x+30+"px";
+    crsr.style.top=dets.y+20+"px";
+})
+
+
+
 var tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
@@ -59,7 +71,7 @@ tl.to(".page1 h2",{
 
 tl.to(".page1 video",{
     width:"85%",
-
+    
 },"anim")
 var tl2 = gsap.timeline({
     scrollTrigger:{

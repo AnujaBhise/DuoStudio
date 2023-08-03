@@ -10,8 +10,23 @@ html,body{
     height: 100%;
     width: 100%;
 }
+/*cursor*/
+.cursor{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    position: fixed;
+    background-color:#D3B2FB;
+    z-index: 9;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+}
+
+
+
 .main{
     background-color: #0F0D0D;
+    overflow-x: hidden;
 }
 .page1{
     min-height: 100vh;
@@ -142,6 +157,7 @@ html,body{
     position: relative;
     padding-top: 60px;
     /* background-color: fuchsia; */
+    border-bottom: 2px solid #b9b3b3 ;
 
 }
 .page3 h1{
@@ -239,7 +255,7 @@ html,body{
 .page3-part3{
     width: 100%;
     height: fit-content;
-    margin-top: 10px;
+    margin-top: 30px;
     position: absolute;
     /* background-color: red; */
     display: flex;
@@ -257,8 +273,8 @@ html,body{
 
 }
 .circle{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     border-radius: 100px;
     margin-right: 120px;
     background-color:#EDBFFF;
@@ -268,7 +284,8 @@ html,body{
 }
 .circle p{
     color:#0F0D0D;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 1vw; 
 }
 /*page 4*/
 .page4{
