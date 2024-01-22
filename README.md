@@ -46,7 +46,7 @@ Explore the website to discover:
 
 ## Getting Started 🏁
 
-1. Clone the repository: `git clone https://github.com/your-username/duo-studio-website.git`
+1. Clone the repository: `https://github.com/AnujaBhise/DuoStudio.git`
 2. Open the project in your favorite code editor.
 3. Customize the content, images, and videos to match your studio's branding.
 4. Add your own projects and client mentions.
