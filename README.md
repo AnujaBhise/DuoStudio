@@ -1,6 +1,10 @@
 # Duo Studio Website 🎨
 
-https://github.com/AnujaBhise/DuoStudio/assets/96904529/7daf8860-d6d5-4731-9108-55965123e68a
+
+
+https://github.com/AnujaBhise/DuoStudio/assets/96904529/c4b29591-3c5a-493a-872f-c0135b72f530
+
+
 
 
 
